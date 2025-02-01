@@ -1,0 +1,2028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1900</width>
+    <height>1002</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../../../../Downloads/scarasinfondo.png</normaloff>../../../../../../../../Downloads/scarasinfondo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(238, 238, 238);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1900</width>
+      <height>1000</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="cinematica_inversa">
+     <attribute name="title">
+      <string>Cinematica inversa</string>
+     </attribute>
+     <widget class="QPushButton" name="botonhome">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>160</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(217, 225, 229);</string>
+      </property>
+      <property name="text">
+       <string>HOME</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="CoordenadaZ">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>170</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_10">
+      <property name="geometry">
+       <rect>
+        <x>1470</x>
+        <y>310</y>
+        <width>350</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionY"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="botonagarrar">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>420</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(217, 225, 229);</string>
+      </property>
+      <property name="text">
+       <string>AGARRAR</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="coordenadaY">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>130</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>910</y>
+        <width>800</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: italic 12pt &quot;Cambria&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Interfaz desarrollada por: Maria Jose Mendieta Ortiz y Juan David Rivaldo Diaz Sierra </string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>640</y>
+        <width>350</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="planoxy"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_8">
+      <property name="geometry">
+       <rect>
+        <x>1090</x>
+        <y>570</y>
+        <width>350</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadZ"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="botonborrar">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>110</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 227, 216);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>BORRAR</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>140</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_4">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>640</y>
+        <width>350</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="planoyz"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>1380</x>
+        <y>10</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>PERFILES DE VELOCIDAD Y ACELERACIÓN</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_5">
+      <property name="geometry">
+       <rect>
+        <x>1090</x>
+        <y>50</y>
+        <width>350</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadX"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>1380</x>
+        <y>850</y>
+        <width>350</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Downloads/imacuna.907c49ac.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonsoltar">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>480</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(217, 225, 229);</string>
+      </property>
+      <property name="text">
+       <string>SOLTAR</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>100</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="coordenadaX">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>60</y>
+        <width>700</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="graficamovimientoinversa"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_12">
+      <property name="geometry">
+       <rect>
+        <x>1470</x>
+        <y>570</y>
+        <width>350</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_12">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionZ"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>840</y>
+        <width>150</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Downloads/unibague.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>180</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Z</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_9">
+      <property name="geometry">
+       <rect>
+        <x>1090</x>
+        <y>310</y>
+        <width>350</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadY"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="botonenviar">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>60</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(231, 227, 216);</string>
+      </property>
+      <property name="text">
+       <string>ENVIAR</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_3">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>640</y>
+        <width>350</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="planoxz"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>CINEMÁTICA INVERSA</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_11">
+      <property name="geometry">
+       <rect>
+        <x>1470</x>
+        <y>50</y>
+        <width>350</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_11">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionX"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>200</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6"/>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>600</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>TRAYECTORIA EN PLANOS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>280</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(231, 231, 231);</string>
+      </property>
+      <property name="text">
+       <string>Ingresar número objeto</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="objeto">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>330</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>270</y>
+        <width>75</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Pictures/Screenshots/pieza3.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>380</y>
+        <width>75</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Pictures/Screenshots/pieza1.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>530</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>310</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>420</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>490</y>
+        <width>75</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Pictures/Screenshots/pieza2.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_7">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>270</y>
+        <width>151</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7"/>
+     </widget>
+     <zorder>verticalFrame_7</zorder>
+     <zorder>verticalFrame_6</zorder>
+     <zorder>botonhome</zorder>
+     <zorder>verticalFrame_10</zorder>
+     <zorder>botonagarrar</zorder>
+     <zorder>coordenadaY</zorder>
+     <zorder>label_19</zorder>
+     <zorder>verticalFrame_2</zorder>
+     <zorder>verticalFrame_8</zorder>
+     <zorder>botonborrar</zorder>
+     <zorder>label_4</zorder>
+     <zorder>verticalFrame_4</zorder>
+     <zorder>label_14</zorder>
+     <zorder>verticalFrame_5</zorder>
+     <zorder>label_16</zorder>
+     <zorder>botonsoltar</zorder>
+     <zorder>label_3</zorder>
+     <zorder>coordenadaX</zorder>
+     <zorder>verticalFrame</zorder>
+     <zorder>verticalFrame_12</zorder>
+     <zorder>label_17</zorder>
+     <zorder>label_5</zorder>
+     <zorder>verticalFrame_9</zorder>
+     <zorder>botonenviar</zorder>
+     <zorder>verticalFrame_3</zorder>
+     <zorder>label_2</zorder>
+     <zorder>verticalFrame_11</zorder>
+     <zorder>label_15</zorder>
+     <zorder>CoordenadaZ</zorder>
+     <zorder>label</zorder>
+     <zorder>objeto</zorder>
+     <zorder>label_8</zorder>
+     <zorder>label_9</zorder>
+     <zorder>label_6</zorder>
+     <zorder>label_10</zorder>
+     <zorder>label_7</zorder>
+     <zorder>label_11</zorder>
+    </widget>
+    <widget class="QWidget" name="Cinematica_directa">
+     <attribute name="title">
+      <string>Cinemática directa</string>
+     </attribute>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>CINEMÁTICA DIRECTA</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_13">
+      <property name="geometry">
+       <rect>
+        <x>1540</x>
+        <y>490</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_25">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionq3"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="botonborrar_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>90</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 227, 216);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>BORRAR</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_14">
+      <property name="geometry">
+       <rect>
+        <x>1540</x>
+        <y>270</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_26">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionq2"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="botonsoltar_2">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>160</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(217, 225, 229);</string>
+      </property>
+      <property name="text">
+       <string>SOLTAR</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="objeto_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>70</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonhome_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>150</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(217, 225, 229);</string>
+      </property>
+      <property name="text">
+       <string>HOME</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="Coordenadaq3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>130</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>810</y>
+        <width>350</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Downloads/imacuna.907c49ac.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>200</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_27"/>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_16">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>20</y>
+        <width>151</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_28"/>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Q1</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_17">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>270</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_29">
+       <item>
+        <layout class="QVBoxLayout" name="planoq2"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>10</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>40</y>
+        <width>75</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Pictures/Screenshots/pieza2.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_18">
+      <property name="geometry">
+       <rect>
+        <x>1220</x>
+        <y>490</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_30">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadq3"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>30</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(231, 231, 231);</string>
+      </property>
+      <property name="text">
+       <string>Ingresar número objeto</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Q2</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_19">
+      <property name="geometry">
+       <rect>
+        <x>1220</x>
+        <y>50</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_31">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadq1"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_20">
+      <property name="geometry">
+       <rect>
+        <x>1540</x>
+        <y>50</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_32">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionq1"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>910</y>
+        <width>800</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: italic 12pt &quot;Cambria&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Interfaz desarrollada por: Maria Jose Mendieta Ortiz y Juan David Rivaldo Diaz Sierra </string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="coordenadaq2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>10</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>1390</x>
+        <y>10</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>PERFILES DE VELOCIDAD Y ACELERACIÓN</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_21">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>230</y>
+        <width>750</width>
+        <height>550</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_33">
+       <item>
+        <layout class="QVBoxLayout" name="graficamovimientodirecta"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>40</y>
+        <width>75</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Pictures/Screenshots/pieza1.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonenviar_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>30</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(231, 227, 216);</string>
+      </property>
+      <property name="text">
+       <string>ENVIAR</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>40</y>
+        <width>75</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Pictures/Screenshots/pieza3.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>800</y>
+        <width>150</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Downloads/unibague.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_22">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>50</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_34">
+       <item>
+        <layout class="QVBoxLayout" name="planoq1"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_23">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>490</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_35">
+       <item>
+        <layout class="QVBoxLayout" name="planoq3"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>10</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Q3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>20</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>TRAYECTORIA EN PLANOS</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_24">
+      <property name="geometry">
+       <rect>
+        <x>1220</x>
+        <y>270</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_36">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadq2"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="botonagarrar_2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>160</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(217, 225, 229);</string>
+      </property>
+      <property name="text">
+       <string>AGARRAR</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="coordenadaq1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="coordenadaq4">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>170</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Q4</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_25">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>710</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_37">
+       <item>
+        <layout class="QVBoxLayout" name="planoq4"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_26">
+      <property name="geometry">
+       <rect>
+        <x>1220</x>
+        <y>710</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_38">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadq4"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_27">
+      <property name="geometry">
+       <rect>
+        <x>1540</x>
+        <y>710</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_39">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionq4"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>+270°</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>140</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>±134°</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>100</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>±101mm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_74">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>60</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);
+font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>±132°</string>
+      </property>
+     </widget>
+     <zorder>verticalFrame_16</zorder>
+     <zorder>verticalFrame_15</zorder>
+     <zorder>label_12</zorder>
+     <zorder>verticalFrame_13</zorder>
+     <zorder>botonborrar_2</zorder>
+     <zorder>verticalFrame_14</zorder>
+     <zorder>botonsoltar_2</zorder>
+     <zorder>objeto_2</zorder>
+     <zorder>botonhome_2</zorder>
+     <zorder>Coordenadaq3</zorder>
+     <zorder>label_20</zorder>
+     <zorder>label_13</zorder>
+     <zorder>verticalFrame_17</zorder>
+     <zorder>label_21</zorder>
+     <zorder>label_22</zorder>
+     <zorder>verticalFrame_18</zorder>
+     <zorder>label_23</zorder>
+     <zorder>label_24</zorder>
+     <zorder>verticalFrame_19</zorder>
+     <zorder>verticalFrame_20</zorder>
+     <zorder>label_25</zorder>
+     <zorder>coordenadaq2</zorder>
+     <zorder>label_26</zorder>
+     <zorder>label_27</zorder>
+     <zorder>verticalFrame_21</zorder>
+     <zorder>label_28</zorder>
+     <zorder>botonenviar_2</zorder>
+     <zorder>label_30</zorder>
+     <zorder>verticalFrame_22</zorder>
+     <zorder>verticalFrame_23</zorder>
+     <zorder>label_31</zorder>
+     <zorder>label_32</zorder>
+     <zorder>label_33</zorder>
+     <zorder>verticalFrame_24</zorder>
+     <zorder>botonagarrar_2</zorder>
+     <zorder>coordenadaq1</zorder>
+     <zorder>label_29</zorder>
+     <zorder>label_34</zorder>
+     <zorder>coordenadaq4</zorder>
+     <zorder>verticalFrame_25</zorder>
+     <zorder>verticalFrame_26</zorder>
+     <zorder>verticalFrame_27</zorder>
+     <zorder>label_35</zorder>
+     <zorder>label_36</zorder>
+     <zorder>label_37</zorder>
+     <zorder>label_74</zorder>
+    </widget>
+    <widget class="QWidget" name="rutinas">
+     <property name="accessibleName">
+      <string>rutinas</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <attribute name="title">
+      <string>Rutinas</string>
+     </attribute>
+     <widget class="QPushButton" name="botonhome_7">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(217, 225, 229);</string>
+      </property>
+      <property name="text">
+       <string>HOME</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_82">
+      <property name="geometry">
+       <rect>
+        <x>1500</x>
+        <y>490</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_97">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionq3_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_83">
+      <property name="geometry">
+       <rect>
+        <x>1180</x>
+        <y>490</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_98">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadq3_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_76">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>800</y>
+        <width>150</width>
+        <height>120</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Downloads/unibague.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_114">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>810</y>
+        <width>350</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Downloads/imacuna.907c49ac.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_84">
+      <property name="geometry">
+       <rect>
+        <x>1180</x>
+        <y>270</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_99">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadq2_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_85">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>50</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_100">
+       <item>
+        <layout class="QVBoxLayout" name="planoq1_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_86">
+      <property name="geometry">
+       <rect>
+        <x>1500</x>
+        <y>270</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_101">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionq2_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_87">
+      <property name="geometry">
+       <rect>
+        <x>1500</x>
+        <y>710</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_102">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionq4_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_88">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>490</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_103">
+       <item>
+        <layout class="QVBoxLayout" name="planoq3_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_89">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>710</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_104">
+       <item>
+        <layout class="QVBoxLayout" name="planoq4_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_90">
+      <property name="geometry">
+       <rect>
+        <x>1180</x>
+        <y>50</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_105">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadq1_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_91">
+      <property name="geometry">
+       <rect>
+        <x>1500</x>
+        <y>50</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_106">
+       <item>
+        <layout class="QVBoxLayout" name="aceleracionq1_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_92">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>821</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_107">
+       <item>
+        <layout class="QVBoxLayout" name="graficamovimientodirecta_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_115">
+      <property name="geometry">
+       <rect>
+        <x>1350</x>
+        <y>10</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>PERFILES DE VELOCIDAD Y ACELERACIÓN</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_93">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>270</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_108">
+       <item>
+        <layout class="QVBoxLayout" name="planoq2_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_116">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>20</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>TRAYECTORIA EN PLANOS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_117">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>910</y>
+        <width>800</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: italic 12pt &quot;Cambria&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Interfaz desarrollada por: Maria Jose Mendieta Ortiz y Juan David Rivaldo Diaz Sierra </string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="verticalFrame_94">
+      <property name="geometry">
+       <rect>
+        <x>1180</x>
+        <y>710</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(231, 231, 231);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_109">
+       <item>
+        <layout class="QVBoxLayout" name="velocidadq4_6"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="botonrutina1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>130</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(231, 227, 216);</string>
+      </property>
+      <property name="text">
+       <string>RUTINA 1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonrutina2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>130</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(231, 227, 216);</string>
+      </property>
+      <property name="text">
+       <string>RUTINA 2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="botonrutina3">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>130</y>
+        <width>90</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Cambria Math&quot;;
+background-color: rgb(231, 227, 216);</string>
+      </property>
+      <property name="text">
+       <string>RUTINA 3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_118">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>20</y>
+        <width>75</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Pictures/Screenshots/pieza1.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_119">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>20</y>
+        <width>75</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Pictures/Screenshots/pieza2.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_120">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>20</y>
+        <width>75</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../../../../../../Pictures/Screenshots/pieza3.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>0</y>
+      <width>161</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;Cambria Math&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>ROBOT SCARA</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
