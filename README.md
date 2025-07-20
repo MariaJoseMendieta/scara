@@ -1,6 +1,9 @@
 # 🦾 Robot serial tipo SCARA para aplicaciones pick-and-place
 
 Este proyecto de grado presenta el diseño, desarrollo y validación de un robot serial tipo **SCARA (Selective Compliant Assembly Robot Arm)** orientado a tareas de **manipulación de objetos (pick-and-place)**. El objetivo principal es aportar a la transición tecnológica de Colombia hacia la implementación de soluciones robóticas en procesos productivos, promoviendo así el desarrollo regional a través de la automatización.
+<p align="center">
+  <img src="scara.jpg" alt="Prototipo SCARA" width="400"/>
+</p>
 
 ---
 
